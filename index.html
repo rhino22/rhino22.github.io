@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h2>Team Cook</h2>
+					<img src="200px-Prof.Cook.jpg" />
+                    <table><tr><td>Justin Miller </td><td></td></tr>
+                        <tr><td>Sam Teed </td><td>@samuel-teed </td></tr>
+                        <tr><td>Craig Winter </td><td>@rhino22</td></tr>
+                        <tr><td>Jose Chavez </td><td> @chavez9j</td></tr>
+                    </table>
+				</section>
+
+				<section>
+                    <section>
+					<h2>Buildings</h2>
+                    <ul>
+                        <li>Building.Java</li>
+                        <li>EnterBuilding.Java</li>
+                        <li>Peon.Java</li>
+                        <li>Visual assets</li>
+                    </ul>
+                    </section>
+                    <section>
+                    <h2>Building.Java</h2>
+                        <ul>
+                        <li>extends from WorldEntity</li>
+                        <li>so far 7 buildings</li>
+                        <table>
+                            <tr><td>Gym</td><td>Wishing Well</td></tr>
+                            <tr><td>Bar</td><td>Blacksmith</td></tr>
+                            <tr><td>Noodle Haus</td><td>Telporter entry</td></tr>
+                            <tr><td>Telporter entry</td><td>More??</td></tr>
+                        </table>
+                            <li>Animation, Health, </li>
+                        </ul>
+                    
+                    </section>
+                    <section>
+                    <h2>EnterBuilding.Java</h2>
+                        
+                        <p>Controls peon moving to building</p>
+                        <p>Calls Peon's methods within Peon.Java</p>
+                    
+                    </section>
+                    <section>
+                    <h2>Peon.Java</h2>
+                        
+                        <p>Most of the work is in here !</p>
+                        <p>Peon can enhance his skills temporarily</p>
+                        <p>He can only have 2 building buffs which have a timer</p>
+                    
+                    </section>
+                    
+                    
+
+				</section>
+
+				
+
+				<section>
+                    <section>
+					<h2>Visual Assets</h2>
+					<ul>
+                        <li>2 animations</li>
+                        <li>A healthy building</li>
+                        <li>A Damaged building</li>
+                        <li>We need help, this is timeconsuming!</li>
+                    </ul>
+                    </section>
+                    <section>
+                    <h2>e.g</h2>
+                        <img src="timatbar.PNG"/>
+                    </section>
+				</section>
+
+				<section>
+					<h2>Challenges</h2>
+					<p>Animation (thanks for animation code!!)</p>
+                    <p>Interaction, Integration with other code!</p>
+                    <p>Peons behind buildings/collisions/selection</p>
+				</section>
+                
+                <section>
+                    <h2>Next?</h2>
+                    <p>Maintaing/upgrading buildings</p>
+                    <p>Posessing a peon? "w,a,s,d"</p>
+                    <p>Do you have any ideas for us?</p>
+                </section>
+
+				<section>
+					<h2>Feedback</h2>
+                    <p>Game Mechanics:</p>
+                    <p>What should the buildings actually do?</p>
+                    <p>Do you like the timed buffs?</p>
+                    <p>Do the buildings look appropriate?</p>
+                    
+				</section>
+                <section>
+                    <img src="buildingsdowhat.PNG" />
+                </section>
+
+				
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
