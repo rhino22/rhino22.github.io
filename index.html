@@ -52,42 +52,42 @@
 
 				<section>
                     <section>
-					<h2>Buildings</h2>
+					<h2>Buildings - What's been happening</h2>
                     <ul>
                         <li>Building.Java</li>
-                        <li>EnterBuilding.Java</li>
-                        <li>Peon.Java</li>
+			<li>BuildingTest.Java</li>
+                        <li>Peon.Java (Removing Code)</li>
+			<li>Add Building UI</li>
                         <li>Visual assets</li>
+			
                     </ul>
                     </section>
                     <section>
                     <h2>Building.Java</h2>
                         <ul>
-                        <li>extends from WorldEntity</li>
-                        <li>so far 7 buildings</li>
-                        <table>
-                            <tr><td>Gym</td><td>Wishing Well</td></tr>
-                            <tr><td>Bar</td><td>Blacksmith</td></tr>
-                            <tr><td>Noodle Haus</td><td>Telporter entry</td></tr>
-                            <tr><td>Telporter entry</td><td>More??</td></tr>
-                        </table>
-                            <li>Animation, Health, </li>
+                        <li>Buildings.Java is now an abstract class</li>
+                        <li>BuildingBar.Java, BuildingGym.Java, etc..</li>
+			<li>Lots of refactoring, commenting and documenting</li>
                         </ul>
                     
                     </section>
                     <section>
-                    <h2>EnterBuilding.Java</h2>
+                    <h2>BuildingTest.Java</h2>
+                        <img src="BuildingTests.PNG" />
                         
-                        <p>Controls peon moving to building</p>
-                        <p>Calls Peon's methods within Peon.Java</p>
                     
                     </section>
                     <section>
                     <h2>Peon.Java</h2>
                         
-                        <p>Most of the work is in here !</p>
-                        <p>Peon can enhance his skills temporarily</p>
-                        <p>He can only have 2 building buffs which have a timer</p>
+                        <p>Peons can still only have 2 building buffs</p>
+			<p>Removed a lot of code, less of a God class</p>
+                    
+                    </section>
+		    
+		    <section>
+                        
+			<img src="addbuildinggui.PNG" />
                     
                     </section>
                     
@@ -101,43 +101,52 @@
                     <section>
 					<h2>Visual Assets</h2>
 					<ul>
-                        <li>2 animations</li>
-                        <li>A healthy building</li>
-                        <li>A Damaged building</li>
-                        <li>We need help, this is timeconsuming!</li>
+                        <li>Gym</li>
+                        <li>Teleporters (thx Kernda)</li>
+                        <li>Wishing Well (thx Melpip)</li>
+			<li>More stages of "damaged" building available</li>
                     </ul>
                     </section>
                     <section>
-                    <h2>e.g</h2>
-                        <img src="timatbar.PNG"/>
+                        <img src="Gym.PNG"/>
+			<img src="teleporter.PNG"/>
+			<img src="well.PNG"/>
                     </section>
 				</section>
 
 				<section>
 					<h2>Challenges</h2>
-					<p>Animation (thanks for animation code!!)</p>
-                    <p>Interaction, Integration with other code!</p>
-                    <p>Peons behind buildings/collisions/selection</p>
+					<p>Refactoring code was a lot of work</p>
+                    <p>Getting the teleporter working, cooldowns, checks the exit.</p>
+		    <p>Creating a new pane amongst the others getting it working</p>
+		    <p>Trying to set up the GUI tests :S</p>
 				</section>
                 
                 <section>
                     <h2>Next?</h2>
-                    <p>Maintaing/upgrading buildings</p>
-                    <p>Posessing a peon? "w,a,s,d"</p>
-                    <p>Do you have any ideas for us?</p>
+                    <p>Buff System</p>
+                    <p>Making the add building point and click, also better design</p>
+                    <p>Finish off all the Visual assets</p>
+		    <p>Do more testing. i.e test minesim.task. testing low hanging fruit</p>
+                </section>
+		
+		<section>
+                    <h3>Sneak peek at Buffs</h3>
+		    <table>
+		    <tr><td><img src="buffcode.PNG"/></td><td><img src="bufftags.PNG"/></td></tr>
+		    </table>
+		    
+                    
+                    
                 </section>
 
 				<section>
 					<h2>Feedback</h2>
-                    <p>Game Mechanics:</p>
-                    <p>What should the buildings actually do?</p>
-                    <p>Do you like the timed buffs?</p>
-                    <p>Do the buildings look appropriate?</p>
-                    
+                    <p>Buff System so far what do you think, both technical and design.</p>
+                    <p>Game mechanics, what would you like each building to do?</p>
+                    <p>What should adding a building UX and UI be like?</p>
+		    <p>Remove/Replace NoodleHaus? are buildings too big?</p>
 				</section>
-                <section>
-                    <img src="buildingsdowhat.PNG" />
-                </section>
 
 				
 
